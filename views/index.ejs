@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Football Highlight Randomiser</title>
+  </head>
+  <body>
+    <h1>Football Highlight Randomiser</h1>
+    <form action="/feed" method="get" class="centered-form">
+      <button type="submit">Randomise</button>
+    </form>
+    <% if(locals.content){ %>
+    <h2><%= content.title %></h2>
+    <div class="video-container">
+      <iframe
+        class="video-frame"
+        src="<%= videoSrc %>"
+        frameborder="0"
+        allowfullscreen
+        allow="autoplay; fullscreen"
+      ></iframe>
+    </div>
+    <% } %>
+  </body>
+</html>
