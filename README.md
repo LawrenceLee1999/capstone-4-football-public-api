@@ -25,7 +25,7 @@ This application allows users to randomise recent football highlights for viewin
 git clone https://github.com/LawrenceLee1999/capstone-4-football-public-api.git
 ```
 
-3. Change direction to the project folder:
+2. Change direction to the project folder:
    
 ```
 cd repo-name
